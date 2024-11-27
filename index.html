@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Vôlei - Agendamento de Partidas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner de Vôlei -->
+    <header class="banner">
+        <div class="logo-img">
+            <img src="voli.png"alt="Logo do Vôlei" class="logo-img">
+            <h1>VÔLEI DAS LENDAS</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <div class="form-section">
+            <h2>Adicionar Jogadores</h2>
+            <form id="playerForm">
+                <input type="text" id="playerName" placeholder="Digite o nome do jogador" required>
+                <button type="submit">Adicionar Jogador</button>
+            </form>
+        </div>
+
+        <div class="agendamento-section">
+            <h2>Agendar Partida de Vôlei</h2>
+            <form id="scheduleForm">
+                <input type="date" id="matchDate" required>
+                <input type="time" id="matchTime" required>
+                <button type="submit">Agendar Partida</button>
+            </form>
+        </div>
+    </main>
+
+    <section class="player-list-section">
+        <h2>Lista de Jogadores</h2>
+        <div id="playerList" class="player-list">
+            <ul></ul>
+        </div>
+    </section>
+
+    <section class="match-schedule-section">
+        <h2>Partidas Agendadas</h2>
+        <div id="matchSchedule" class="match-schedule"></div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; VÔLEI DAS LENDAS, MAIS RESENHA DO QUE VÔLEI!!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
